@@ -1,10 +1,3 @@
-/**
- * App Theme - Colors
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
 const app = {
   background: '#E9EBEE',
   cardBackground: '#FFFFFF',

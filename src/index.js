@@ -1,11 +1,4 @@
-/**
- * Index - this is where everything
- *  starts - but offloads to app.js
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-/* global __DEV__ */
+//global __DEV__ 
 import React from 'react';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { connect, Provider } from 'react-redux';

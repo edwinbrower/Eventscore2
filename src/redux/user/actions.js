@@ -1,17 +1,8 @@
-/**
- * User Actions
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
 import jwtDecode from 'jwt-decode';
-
 import AppAPI from '@lib/api';
 
-/**
-  * Login to API and receive Token
-  */
+
+//Login to API and receive Token
 export function login(credentials, freshLogin) {
   return dispatch => new Promise(async (resolve, reject) => {
     const userCreds = credentials || null;
@@ -53,9 +44,7 @@ export function login(credentials, freshLogin) {
   });
 }
 
-/**
-  * Logout
-  */
+//Logout
 export function logout() {
   return dispatch => AppAPI.deleteToken()
     .then(() => {
@@ -66,9 +55,8 @@ export function logout() {
     });
 }
 
-/**
-  * Get My User Data
-  */
+
+//Get My User Data
 export function getMe() {
   return dispatch => AppAPI.me.get()
     .then((userData) => {
@@ -81,10 +69,8 @@ export function getMe() {
     });
 }
 
-/**
-  * Update My User Data
-  * - Receives complete user data in return
-  */
+
+//Update My User Data - Receives complete user data in return
 export function updateMe(payload) {
   return dispatch => AppAPI.me.post(payload)
     .then((userData) => {

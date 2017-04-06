@@ -2,6 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
+import mongoose from '../database/dbconfig';
+
 
 // Initialize http server
 const app = express();

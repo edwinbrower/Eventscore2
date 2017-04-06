@@ -1,15 +1,6 @@
-/**
- * Recipe Actions
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
 import AppAPI from '@lib/api';
 
-/**
-  * Get Meals
-  */
+//Get Meals
 export function getMeals() {
   return dispatch =>
     AppAPI.meals.get()
@@ -21,9 +12,7 @@ export function getMeals() {
       });
 }
 
-/**
-  * Reset Meals
-  */
+//Reset Meals
 export function reset() {
   return {
     type: 'MEALS_RESET',

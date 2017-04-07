@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
 });
 
 /* Component ==================================================================== */
-class StyleGuide extends Component {
+export default class StyleGuide extends Component {
   static componentName = 'StyleGuide';
 
   constructor(props) {
@@ -378,6 +378,3 @@ class StyleGuide extends Component {
     />
   )
 }
-
-/* Export Component ==================================================================== */
-export default StyleGuide;

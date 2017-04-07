@@ -1,10 +1,4 @@
-/**
- * API Config
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
-
+//API Config
 export default {
   // The URL we're connecting to
   hostname: 'http://wp-api.mcnam.ee',

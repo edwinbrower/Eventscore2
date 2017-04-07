@@ -1,9 +1,4 @@
-/**
- * Login Screen
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
+//Login Screen
 import React, { Component, PropTypes } from 'react';
 import {
   ScrollView,

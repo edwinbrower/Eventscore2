@@ -13,7 +13,7 @@ import { Card } from 'react-native-elements';
 import { AppSizes, AppColors, AppStyles } from '@theme/';
 
 /* Component ==================================================================== */
-class CustomCard extends Component {
+export default class CustomCard extends Component {
   static propTypes = {
     containerStyle: PropTypes.oneOfType([
       PropTypes.array,
@@ -62,5 +62,3 @@ class CustomCard extends Component {
   render = () => <Card {...this.cardProps()} />
 }
 
-/* Export Component ==================================================================== */
-export default CustomCard;

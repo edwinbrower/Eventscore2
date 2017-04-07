@@ -1,9 +1,4 @@
-/**
- * Login Container
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
+//Login Container
 import { connect } from 'react-redux';
 
 // Actions

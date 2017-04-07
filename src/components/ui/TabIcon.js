@@ -12,7 +12,7 @@ import { Icon } from 'react-native-elements';
 import { AppColors } from '@theme/';
 
 /* Component ==================================================================== */
-const TabIcon = ({ icon, selected }) => (
+export default const TabIcon = ({ icon, selected }) => (
   <Icon
     name={icon}
     size={26}
@@ -22,6 +22,3 @@ const TabIcon = ({ icon, selected }) => (
 
 TabIcon.propTypes = { icon: PropTypes.string.isRequired, selected: PropTypes.bool };
 TabIcon.defaultProps = { icon: 'search', selected: false };
-
-/* Export Component ==================================================================== */
-export default TabIcon;

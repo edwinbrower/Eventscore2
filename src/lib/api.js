@@ -1,10 +1,4 @@
-/**
- * API Functions
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
- /* global fetch console */
+//API Functions
 import DeviceInfo from 'react-native-device-info';
 
 import JWT from '@lib/api.jwt';

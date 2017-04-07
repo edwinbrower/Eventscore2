@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 });
 
 /* Component ==================================================================== */
-const Alerts = ({ status, success, error }) => (
+export default const Alerts = ({ status, success, error }) => (
   <View style={styles.alerts}>
     {!!success &&
       <View>
@@ -116,5 +116,3 @@ Alerts.defaultProps = {
 
 Alerts.componentName = 'Alerts';
 
-/* Export Component ==================================================================== */
-export default Alerts;

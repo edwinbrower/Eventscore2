@@ -21,7 +21,11 @@
 ## Setup Instructions (only need to complete once)
 
 - npm install
+- git remote add upstream https://github.com/Eventscore/Eventscore2.git
 
 ## Start Instructions
 - npm start
 - 
+
+## When trying to commit
+- git pull --rebase upstream master

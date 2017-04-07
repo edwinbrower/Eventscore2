@@ -1,11 +1,3 @@
-/**
- * Loading Screen
- *
-     <Loading text={'Server is down'} />
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
 import React, { PropTypes } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 
@@ -16,7 +8,7 @@ import { AppStyles } from '@theme/';
 import { Spacer, Text } from '@ui/';
 
 /* Component ==================================================================== */
-const Loading = ({ text, transparent }) => (
+export default const Loading = ({ text, transparent }) => (
   <View
     style={[
       AppStyles.container,
@@ -39,6 +31,3 @@ const Loading = ({ text, transparent }) => (
 Loading.propTypes = { text: PropTypes.string, transparent: PropTypes.bool };
 Loading.defaultProps = { text: null, transparent: false };
 Loading.componentName = 'Loading';
-
-/* Export Component ==================================================================== */
-export default Loading;

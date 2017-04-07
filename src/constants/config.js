@@ -1,9 +1,4 @@
-/**
- * Global App Config
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
+//Global App Config
 /* global __DEV__ */
 import { AppColors, AppStyles, AppSizes } from '@theme/';
 

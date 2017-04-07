@@ -13,7 +13,7 @@ import { FormInput } from 'react-native-elements';
 import { AppColors, AppFonts } from '@theme/';
 
 /* Component ==================================================================== */
-class CustomFormInput extends Component {
+export default class CustomFormInput extends Component {
   static propTypes = {
     containerStyle: PropTypes.oneOfType([
       PropTypes.array,
@@ -64,5 +64,3 @@ class CustomFormInput extends Component {
   render = () => <FormInput {...this.inputProps()} />
 }
 
-/* Export Component ==================================================================== */
-export default CustomFormInput;

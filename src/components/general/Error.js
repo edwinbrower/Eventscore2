@@ -1,11 +1,3 @@
-/**
- * Error Screen
- *
-    <Error text={'Server is down'} />
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
 import React, { PropTypes } from 'react';
 import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -17,7 +9,7 @@ import { AppStyles } from '@theme/';
 import { Spacer, Text, Button } from '@ui/';
 
 /* Component ==================================================================== */
-const Error = ({ text, tryAgain }) => (
+export default const Error = ({ text, tryAgain }) => (
   <View style={[AppStyles.container, AppStyles.containerCentered]}>
     <Icon name={'ios-alert-outline'} size={50} color={'#CCC'} />
 
@@ -41,6 +33,3 @@ const Error = ({ text, tryAgain }) => (
 Error.propTypes = { text: PropTypes.string, tryAgain: PropTypes.func };
 Error.defaultProps = { text: 'Woops, Something went wrong.', tryAgain: null };
 Error.componentName = 'Error';
-
-/* Export Component ==================================================================== */
-export default Error;

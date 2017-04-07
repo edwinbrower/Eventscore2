@@ -13,7 +13,7 @@ import { FormLabel } from 'react-native-elements';
 import { AppColors, AppFonts } from '@theme/';
 
 /* Component ==================================================================== */
-class CustomFormLabel extends Component {
+export default class CustomFormLabel extends Component {
   static propTypes = {
     labelStyle: PropTypes.oneOfType([
       PropTypes.array,
@@ -47,6 +47,3 @@ class CustomFormLabel extends Component {
 
   render = () => <FormLabel {...this.labelProps()}>{this.props.children}</FormLabel>;
 }
-
-/* Export Component ==================================================================== */
-export default CustomFormLabel;

@@ -1,11 +1,3 @@
-/**
- * Placeholder Scene
- *
-    <Placeholder text={"Hello World"} />
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
- */
 import React, { PropTypes } from 'react';
 import { View } from 'react-native';
 
@@ -16,7 +8,7 @@ import { AppStyles } from '@theme/';
 import { Text } from '@ui/';
 
 /* Component ==================================================================== */
-const Placeholder = ({ text }) => (
+export default const Placeholder = ({ text }) => (
   <View style={[AppStyles.container, AppStyles.containerCentered]}>
     <Text>{text}</Text>
   </View>
@@ -26,5 +18,3 @@ Placeholder.propTypes = { text: PropTypes.string };
 Placeholder.defaultProps = { text: 'Coming soon...' };
 Placeholder.componentName = 'Placeholder';
 
-/* Export Component ==================================================================== */
-export default Placeholder;

@@ -13,7 +13,7 @@ import { List } from 'react-native-elements';
 import { AppColors } from '@theme/';
 
 /* Component ==================================================================== */
-class CustomList extends Component {
+export default class CustomList extends Component {
   static propTypes = {
     containerStyle: PropTypes.oneOfType([
       PropTypes.array,
@@ -47,5 +47,3 @@ class CustomList extends Component {
   render = () => <List {...this.listProps()} />;
 }
 
-/* Export Component ==================================================================== */
-export default CustomList;

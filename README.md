@@ -10,3 +10,18 @@
 - Edwin Brower
 - Jason Kuo
 - John Duong
+
+## Required Dependencies
+- node.js 
+- brew
+- Xcode
+- Watchman (brew install watchman)
+- React Native (npm install -g react-native-cli)
+
+## Setup Instructions (only need to complete once)
+
+- npm install
+
+## Start Instructions
+- npm start
+- 
